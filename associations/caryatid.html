@@ -55,7 +55,7 @@
       <h2>Glimpses of Caryatid</h2>
       <div class="video-container">
         <video controls>
-          <source src="../assets/videos/caryatid.mp4" type="video/mp4">
+          <source src="../assets/videos/vistara.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -106,7 +106,7 @@
 
         <!-- Day 2 Events (1st Feb) -->
         <tr>
-          <td class="day-header" rowspan="7">Day 2<br>8th Feb</td>
+          <td class="day-header" rowspan="8">Day 2<br>8th Feb</td>
           <td class="event-name">Research Competition</td>
           <td class="event-time">All Day</td>
         </tr>
@@ -133,6 +133,10 @@
         <tr>
           <td class="event-name">Career Pathways</td>
           <td class="event-time">10:30 AM - 11:30 AM</td>
+        </tr>
+        <tr>
+          <td class="event-name">Mould and Marvel</td>
+          <td class="event-time">1:00 PM - 2:00 PM</td>
         </tr>
       </tbody>
     </table>
@@ -301,6 +305,17 @@
       Register Now
     </a>
   </div>
+  </div>
+  <div class="event-item" data-event="15">
+  <img src="../assets/images/caryatid/mould-marvel.jpeg" alt="Event 15">
+  <div class="event-overlay">
+    <h3>Mould and Marvel</h3>
+    <p>Unleash your creativity through clay</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5hSnsZGXpQktIw2O3wcL8RmmMCv-0HEDGAkaJTppSxk12Fg/viewform?usp=publish-editor" target="_blank" class="event-register-btn">
+      Register Now
+    </a>
+  </div>
+</div>
 </div>
 </div>
 </section>
@@ -326,7 +341,6 @@
             </div>
           </div>
 
-          <!-- Mould & Marvel Details -->
           <div id="event2Details" style="display: none;">
             <h4>BIM Talk Session</h4>
             <p>Talk Session on Building Information Modeling (BIM)</p>
@@ -469,16 +483,18 @@
             </div>
           </div>
 
-         
-
+          <div id="event15Details" style="display: none;">
+            <h4>Mould and Marvel</h4>
+            <p>Unleash your creativity through clay</p>
+            <div class="event-details">
+              <p><strong>Date:</strong> 08-02-2026</p>
+              <p><strong>Time:</strong> 1:00 pm - 2:00 pm</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5hSnsZGXpQktIw2O3wcL8RmmMCv-0HEDGAkaJTppSxk12Fg/viewform?usp=publish-editor" target="_blank" class="modal-register-btn">Register Now</a>
+            </div>
+          </div>
         </div>
       </div>
       </div>
-      </div>
-      </section>
-  </div>
-
-      
     
    <div class="footer-spacer"></div>
 <footer class="prayaag-footer">
@@ -784,7 +800,8 @@ const eventData = {
   11: { title: "Techcanvas", htmlId: "event11Details" },
   12: { title: "Touch and Tell", htmlId: "event12Details" },
   13: { title: "GeoCraze", htmlId: "event13Details" },
-  14: { title: "Tower of Tension", htmlId: "event14Details" }
+  14: { title: "Tower of Tension", htmlId: "event14Details" },
+  15: { title: "Mould and Marvel", htmlId: "event15Details" }
 };
 
 const modal = document.getElementById('eventModal');
