@@ -23,9 +23,7 @@
   <span id="overlay-minutes" data-label="MINUTES">00</span>
   <span id="overlay-seconds" data-label="SECONDS">00</span>
 </div>
-
 </div>
-	<!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-logo">PRAYAAG 5.0</div>
 
@@ -162,7 +160,6 @@
   </div>
 </footer>
 
-<!-- End of .container -->
   <script>
     const targetDate = new Date("Feb 07, 2026 09:00:00").getTime();
 
@@ -222,17 +219,14 @@ model.addEventListener("load", () => {
   const overlayMinutes = document.getElementById("overlay-minutes");
   const overlaySeconds = document.getElementById("overlay-seconds");
 
-  // Hard-coded launch date and time: Jan 31, 2026, 16:50
-  // Hard-coded launch date and time: Jan 31, 2026, 17:00
-const launchTime = new Date(2026, 0, 31, 20, 0, 0).getTime(); // month is 0-indexed
- // month is 0-indexed
+  // Hard-coded launch date and time: Jan 31, 2026, 20:00
+const launchTime = new Date(2026, 0, 31, 20, 0, 0).getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
     const diff = launchTime - now;
 
     if (diff <= 0) {
-      // Launch time has passed → hide overlay permanently
       overlay.style.display = "none";
       clearInterval(timer);
     } else {
@@ -251,7 +245,6 @@ const launchTime = new Date(2026, 0, 31, 20, 0, 0).getTime(); // month is 0-inde
   // Initial check
   updateCountdown();
 
-  // Update every second
   const timer = setInterval(updateCountdown, 1000);
 </script>
 
